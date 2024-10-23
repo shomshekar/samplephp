@@ -1,0 +1,26 @@
+{
+    "name": "shomshekar/samplephp",
+    "authors": [
+        {
+            "name": "Shomshekar Shilvant",
+            "email": "shomshekar@rediff.com"
+        }
+    ],
+    "require": {
+        "illuminate/collections": "^9.52"
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Http/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.23"
+    }
+}

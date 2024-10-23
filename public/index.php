@@ -7,6 +7,7 @@ session_start();
 
 const BASE_PATH = __DIR__.'/../';
 
+require BASE_PATH."vendor/autoload.php";
 // var_dump(BASE_PATH);
 
 $config = require BASE_PATH."config.php";
@@ -15,12 +16,12 @@ require BASE_PATH."Core/functions.php";
 
 // classes like Database, Response are auto load only on calling it, 
 // not before that
-spl_autoload_register(function($class){
+// spl_autoload_register(function($class){
 
-    $class = str_replace('\\', DIRECTORY_SEPARATOR, $class);
+//     $class = str_replace('\\', DIRECTORY_SEPARATOR, $class);
 
-    require base_path("{$class}.php");
-});
+//     require base_path("{$class}.php");
+// });
 
 require base_path('bootstrap.php');
 
